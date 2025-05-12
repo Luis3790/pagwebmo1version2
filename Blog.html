@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+            
+                    <label for="check" class="checkbtn">
+            
+                        <i class="fas fa-bars"></i>
+            
+                    </label>
+                    <img src="img\logo.png" alt="logo" class="logo">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="Servicios.html">Servicios</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <!--Se coloca el titulo de pagina en un encabezado. En esta pagina,
+    se da espacio a un pequeño blog de viajes. Se uso tailwind
+    para dar estilo a los textos mas importantes-->
+    <header>
+        <h1 class="text-3xl"><strong>Blog de nuestros Viajes</strong></h1>
+        <p>Explora el mundo con Andino Viajes</p>
+      </header>
+    <main>
+        <div class="container columna">
+            <div class="post">
+              <img src="img\paris.jpg" alt="París">
+              <div class="post-content">
+                <h2 class="text-2xl"><strong>Un paseo por París</strong></h2>
+                <p class="parrafo">La ciudad del amor nunca decepciona. Desde la Torre Eiffel hasta los encantadores cafés de Montmartre, cada rincón tiene algo especial.</p>
+                
+                <!--mosaico de imagenes usando tailwind--> 
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4">
+                <img src="/img/paris2.jpg" alt="Imagen 1" class="w-full h-32 object-cover rounded-md shadow">
+                <img src="/img/paris3.jfif" alt="Imagen 2" class="w-full h-32 object-cover rounded-md shadow">
+                <img src="/img/paris4.jpg" alt="Imagen 3" class="w-full h-32 object-cover rounded-md shadow">
+                <img src="/img/paris5.jpg" alt="Imagen 4" class="w-full h-32 object-cover rounded-md shadow">
+  
+                  </div>
+                  <h2 class="text-2xl">Tips para tu paseo por paris:</h2>
+                  <p class="parrafo">
+                    <ol class="list-decimal ml-5">
+                      <li> <h3><strong>Planea tus visitas con antelación</strong></h3>
+                              <p class="bg-blue-50 border-l-4 border-blue-500 text-blue-800 p-4 rounded-md shadow-sm">
+                                Compra entradas online para la Torre Eiffel, el Louvre, y el Palacio de Versalles. Evitarás colas enormes.
+
+                              Reserva con horario fijo, especialmente en temporada alta.</p>
+                            </li>
+                      <li>
+                              <h3><strong>Muévete como un local</strong></h3>
+                              <p class="bg-blue-50 border-l-4 border-blue-500 text-blue-800 p-4 rounded-md shadow-sm">
+                                Usa el Metro: rápido, barato y bien conectado. Considera comprar un Paris Visite Pass o una carnet de 10 billetes.
+
+                              Descarga la app Citymapper o Bonjour RATP para moverte fácil.</p>
+                      </li>
+                      <li><h3><strong>Come bien, sin arruinarte</strong></h3>
+                              <p class="bg-blue-50 border-l-4 border-blue-500 text-blue-800 p-4 rounded-md shadow-sm">
+                                Evita restaurantes junto a atracciones turísticas (caros y promedio).
+
+                              Busca bistrós locales, panaderías, o prueba menús de almuerzo económicos.
+
+                              Prueba: croissant, quiche, raclette, crepes y, por supuesto, vino francés.
+                              </p>
+                            </li>
+                    </ol>
+                  </p>
+              </div>
+            </div>
+        
+            <div class="post">
+              <img src="img\akihabara.jpg" alt="Tokio">
+              <div class="post-content">
+                <h2 class="text-2xl"><strong>Descubriendo Tokio</strong></h2>
+                <p class="parrafo">Una mezcla fascinante entre lo tradicional y lo futurista. Templos tranquilos y luces de neón conviven en armonía.</p>
+                <!--mosaico de imagenes usando tailwind--> 
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4">
+                <img src="/img/tokio2.jpg" alt="Imagen 1" class="w-full h-32 object-cover rounded-md shadow">
+                <img src="/img/tokio3.jpg" alt="Imagen 2" class="w-full h-32 object-cover rounded-md shadow">
+                <img src="/img/tokio4.jfif" alt="Imagen 3" class="w-full h-32 object-cover rounded-md shadow">
+                <img src="/img/tokio5.jfif" alt="Imagen 4" class="w-full h-32 object-cover rounded-md shadow">
+  
+                  </div>
+                  <h2 class="text-2xl">Tips para tu paseo por Tokio:</h2>
+                  <p class="parrafo">
+                    <ol class="list-decimal ml-5">
+                      <li> <h3><strong> Consigue una tarjeta de transporte (Suica o Pasmo)</strong></h3>
+                              <p class="bg-blue-50 border-l-4 border-blue-500 text-blue-800 p-4 rounded-md shadow-sm">
+                                Son tarjetas recargables que te permiten usar metro, trenes, buses y hasta pagar en tiendas.
+
+                              Cómprala en el aeropuerto o estaciones principales (Narita, Haneda, Shinjuku).
+
+                              Te ahorra tiempo, evita comprar boletos individuales y es válida en casi todo Japón.
+                            </p>
+                            </li>
+                      <li>
+                              <h3><strong>Come en lugares pequeños (y sin miedo)</strong></h3>
+                              <p class="bg-blue-50 border-l-4 border-blue-500 text-blue-800 p-4 rounded-md shadow-sm">
+                              Los restaurantes sin cartel en inglés o con máquinas expendedoras suelen ser excelentes y baratos.
+
+                              No es mala educación comer solo o en silencio.
+
+                              ¡No dejes Tokio sin probar ramen, sushi, tonkatsu, yakitori y melon pan!</p>
+                      </li>
+                      <li><h3><strong>Aprende algunas frases básicas en japonés</strong></h3>
+                              <p class="bg-blue-50 border-l-4 border-blue-500 text-blue-800 p-4 rounded-md shadow-sm">
+                              Aunque Tokio es moderno, muchos locales no hablan inglés. Aprender palabras como:
+
+                              "Sumimasen" (disculpe),
+
+                              "Arigatou" (gracias),
+
+                              "Eigo?" (¿inglés?)
+
+                              puede hacer maravillas para la comunicación y mostrar respeto.
+
+                                </p>
+                            </li>
+                    </ol>
+                  </p>
+              </div>
+              </div>
+            </div>
+        
+            <div class="post">
+              <img src="img\patagonia.jpg" alt="Patagonia">
+              <div class="post-content">
+                <h2 class="text-2xl"><strong>Aventuras en la Patagonia</strong></h2>
+                <p class="parrafo">Montañas imponentes, glaciares majestuosos y una naturaleza salvaje. La Patagonia es un paraíso para los aventureros.</p>
+
+                 <!--mosaico de imagenes usando tailwind--> 
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4">
+                <img src="/img/patagonia2.jpg" alt="Imagen 1" class="w-full h-32 object-cover rounded-md shadow">
+                <img src="/img/patagonia3.jfif" alt="Imagen 2" class="w-full h-32 object-cover rounded-md shadow">
+                <img src="/img/patagonia4.jpg" alt="Imagen 3" class="w-full h-32 object-cover rounded-md shadow">
+                <img src="/img/patagonia5.jfif" alt="Imagen 4" class="w-full h-32 object-cover rounded-md shadow">
+  
+                  </div>
+                  <h2 class="text-2xl">Tips para tu paseo por la patagonia:</h2>
+                  <p class="parrafo">
+                    <ol class="list-decimal ml-5">
+                      <li> <h3><strong>Prepárate para el clima cambiante</strong></h3>
+                              <p class="bg-blue-50 border-l-4 border-blue-500 text-blue-800 p-4 rounded-md shadow-sm">
+                              En un solo día puedes tener sol, viento, lluvia y frío.
+
+                              Lleva ropa en capas: camiseta térmica, abrigo impermeable, y cortaviento son esenciales.
+
+                              No subestimes el viento patagónico: es fuerte y constante, sobre todo en verano.
+                            </p>
+                            </li>
+                      <li>
+                              <h3><strong>Planifica con antelación (pero deja espacio para la flexibilidad)</strong></h3>
+                              <p class="bg-blue-50 border-l-4 border-blue-500 text-blue-800 p-4 rounded-md shadow-sm">
+                              Si vas a lugares populares como El Chaltén, Torres del Paine o El Calafate, reserva alojamiento con tiempo.
+
+                              Algunos caminos o excursiones (como a glaciares o trekking en parques nacionales) pueden cerrarse por clima, así que ten días libres por si necesitas reacomodar.
+                              </p>
+                      </li>
+                      <li><h3><strong>Lleva calzado cómodo y preparado para senderismo</strong></h3>
+                              <p class="bg-blue-50 border-l-4 border-blue-500 text-blue-800 p-4 rounded-md shadow-sm"> 
+                              Muchas de las mejores experiencias (miradores, glaciares, lagos) requieren caminar.
+
+                              Zapatillas impermeables o botas de trekking livianas son fundamentales.
+
+                                </p>
+                            </li>
+                    </ol>
+                  </p>
+
+              </div>
+            </div>
+          </div>
+        
+    </main>
+    <footer>
+        <p>&copy; 2025 Andino viajes. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

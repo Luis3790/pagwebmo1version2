@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>@media (max-width: 768px) {
+    .service {
+      flex-direction: column;
+    }
+    }</style>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+            
+                    <label for="check" class="checkbtn">
+            
+                        <i class="fas fa-bars"></i>
+            
+                    </label>
+                    <img src="img\logo.png" alt="logo" class="logo">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="Servicios.html">Servicios</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 class="text-3xl"><strong>Servicios de Viaje</strong></h1>
+        <p>Todo lo que necesitas para disfrutar tu aventura</p>
+      </header>
+      <main>
+
+        <div class="container columna">
+            <div class="service">
+              <img src="img\bus.jpg" alt="Servicio de Traslados">
+              <div class="service-content">
+                <h2 class="text-2xl"><strong>Traslados</strong></h2>
+                <p>Ofrecemos traslados desde y hacia aeropuertos, estaciones de tren y hoteles en vehículos cómodos y seguros. Puntualidad garantizada.</p>
+              </div>
+            </div>
+        
+            <div class="service">
+              <img src="img\hotel.jpg">
+              <div class="service-content">
+                <h2 class="text-3xl"><strong>Alojamiento</strong></h2>
+                <p>Te ayudamos a encontrar el alojamiento perfecto: desde hoteles boutique hasta casas rurales o departamentos temporales, adaptado a tus gustos y presupuesto.</p>
+              </div>
+            </div>
+        
+            <div class="service">
+              <img src="img\excursion.jpg">
+              <div class="service-content">
+                <h2 class="text-2xl"><strong>Excursiones</strong></h2>
+                <p>Explora destinos únicos con nuestras excursiones guiadas. Aventuras, cultura y naturaleza para todos los gustos, con guías expertos.</p>
+              </div>
+            </div>
+          </div>
+      </main>
+
+      <footer>
+        <p>&copy; 2025 Andino viajes. Todos los derechos reservados.</p>
+    </footer>
+
+
+</body>
+</html>

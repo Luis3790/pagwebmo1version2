@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <!--iniciamos con la barra de menu que se 
+    hace desplegable cuando se achica la pantalla-->
+    <nav>
+        <input type="checkbox" id="check">
+            
+                    <label for="check" class="checkbtn">
+            
+                        <i class="fas fa-bars"></i>
+            
+                    </label>
+                    <img src="img\logo.png" alt="logo" class="logo">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="Servicios.html">Servicios</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <main class="contact">
+        <!--pongo un titulo resaltado con tailwind en el encabezado
+        acompañado de un parrago con una descripcion breve-->
+        <header>
+        <section class="hero">
+          <center><nav>  
+            <h1 class="text-4xl border-solid outline-black">Bienvenido a Andino Viajes</h1>
+           
+            <p>Explora nuestros servicios y conoce más sobre nosotros.</p>
+            <a href="contacto.html" class="cta">Contáctanos</a>
+           </nav> </center>
+        </header>
+        <center><img src="/img/vacaciones.jpg" alt="imginicio" class="max-h-screen min-h-auto min-w-3xs"></center>
+        </section>
+    
+        <section>
+            <article>
+                <!--en esta seccion, agrego dos columnas principales.
+                una de ellas comtiene un ejemplos de destinos turisticos de interes,
+                con unos videos cortos de pocos segundos y una descripcion, que busca
+                captar la atencion. Estos ultimos son desplegables para no 
+                saturar la pagina de inicio, y darle algo de interactividad
+                y animacion-->
+                <center><div class="columna box">
+                 <header>   
+                <h2 class="text-2xl">¿porque viajar con nosotros?</h2>
+                </header>
+                <p class="parrafo">Porque te ofrecemos los mejores destinos, al <mark>mejor precio en cualquier temporada.</mark> 
+                    Acercate por cualquier oficina a planear tus vacaciones.
+                    Tenemos destinos clave para vos:
+                </p>
+                <ul>
+                    <li class="list-item">patagonia
+                        <p class="hidden-text box"><strong>explora el fabuloso paisaje patagonico, y disfruta comidas deliciosas</strong></p>
+                        <video src="/video/patagonia.mp4" class="miniatura hidden-text" autoplay loop></video>
+                    </li>
+                    <li class="list-item">paris
+                        <p class="hidden-text box"><strong>visite uno de los destinos mas buscados nivel mundial hoy con andino viajes</strong></p>
+                        <video src="/video/paris.mp4" class="miniatura hidden-text" autoplay loop></video>
+                    </li>
+                    <li class="list-item">Tokio
+                        <p class="hidden-text box"><strong>pierdase en las calles y callejones de tokio y disfrute de la vida nocturna</strong></p>
+                        <video src="/video/tokio.mp4" class="miniatura hidden-text" autoplay loop></video>
+                    </li>
+                </ul>
+            </div></center>
+            </article>
+    
+            <article>
+                <center><div class="columna box">
+               <header>    
+            <!--en esta colimba se busca captar la atencion, brindando la posibilidad
+            de pagar en forma accesible y por todos los medios de pago
+            ante lo cual a modo ilustratutivo, se incluye una imagen
+            con los medios de pago disponibles-->
+                <h2 class="text-2xl">¿que tal los precios?</h2>
+                </header> 
+                <p class="parrafo">Podes acercarte a arreglar tu viaje este mes y <mark>señarlo para que te quede en cuotas fijas.</mark>
+                    Nuestros asesores de viajes, son profesionales y estan siempre disponibles. Decinos cuanto
+                    estas dispuesto a gastar en tus vacaciones, y te ofrecemos una cotizacion completa, <mark>acorde 
+                    a tu bolsillo.</mark>
+                    Aceptamos todos los medios de pago.
+                </p>
+            </div></center>
+                <center><img src="img\metodos-de-pago.jpg" alt="medios de pago"></center>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Andino viajes. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>

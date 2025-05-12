@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mi Sitio Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    
+        <nav>
+            <input type="checkbox" id="check">
+            
+                    <label for="check" class="checkbtn">
+            
+                        <i class="fas fa-bars"></i>
+            
+                    </label>
+                    <img src="img\logo.png" alt="logo" class="logo">
+
+
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="Servicios.html">Servicios</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1 class="text-3xl"><strong>Contáctanos</strong></h1>
+            <p>¿Tienes alguna pregunta? ¡Contáctanos!</p>
+          </header>
+    
+    <main>
+        <section class="comp">
+            
+            <!--Se inicia el formulario de contacto donde 
+            se podra contactar atravez de correo electronico. los 
+            elementos label en el fomulario estan destacados usando tailwind
+            para darle tamaño a los nombres -->
+            <form action="#" method="post">
+            <div class="container">  
+                <label for="nombre" class="text-xl">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+            </div>
+            <div class="container">
+                
+    
+                <label for="email" class="text-xl">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email" required placeholder="ej: elandinoviajes@gmail.com"><br><br>
+            </div>
+            <div class="container">
+                <label for="mensaje" class="text-xl">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5" required placeholder="deje aqui su mensaje, y lo contactaremos"></textarea><br><br>
+            </div>
+            <div>
+                <img src="/img/logo.png" alt="logo">
+        </div>
+                <button type="submit">Enviar</button>
+            </form>
+            
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>
